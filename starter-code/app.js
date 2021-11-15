@@ -51,8 +51,7 @@ app.get("/artist-search", (req, res, next) => {
       // );
 
       const data = {
-        artists: response.body.artists.items,
-        title: "IRONHACK LAB"
+        artists: response.body.artists.items
       };
 
       res.render("artist-search-results", data);
